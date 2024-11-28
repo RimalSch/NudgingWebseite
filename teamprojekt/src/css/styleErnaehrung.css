@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f7f7f7, #eaeaea); /* Existing background gradient */
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.content {
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Question Section */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px; /* Adjusted margin-bottom */
+    font-size: 1.5em;
+}
+
+.text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #bdc3c7; /* Matching the existing color scheme */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #ffffff;
+    border-radius: 20px; /* Changed to 20px for consistency with radio buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold; /* Added bold font styling */
+}
+
+button:hover {
+    background-color: #95a5a6;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #34495e;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Custom Radio Button Styles */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around; /* Titel in einer Reihe */
+    align-items: flex-start; /* Spalten oben ausrichten */
+    flex-wrap: nowrap; /* Kein Zeilenumbruch */
+    gap: 20px; /* Abstand zwischen Spalten */
+}
+
+.option-column {
+    flex: 1; /* Spalten gleich breit */
+    display: flex;
+    flex-direction: column; /* Checkboxen vertikal */
+    align-items: flex-start; /* Links ausrichten */
+}
+
+.option-column h2 {
+    text-align: left; /* Titel linksbündig */
+    margin-bottom: 15px; /* Abstand zum Inhalt */
+    font-size: 1.2em; /* Einheitliches Schriftbild */
+    color: #2c3e50; /* Konsistenter Titelstil */
+}
+
+.option-column label {
+    display: flex; /* Checkbox und Text nebeneinander */
+    align-items: center; /* Vertikale Zentrierung */
+    margin-bottom: 10px; /* Abstand zwischen Optionen */
+    font-size: 1em; /* Einheitliche Schriftgröße */
+    color: #34495e; /* Konsistente Textfarbe */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Abstand zwischen Checkbox und Label-Text */
+}
+
+/* Additional Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7f8c8d;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #636e72;
+}

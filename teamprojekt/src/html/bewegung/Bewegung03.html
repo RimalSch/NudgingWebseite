@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bewegungsauswahl2</title>
+  <link rel="stylesheet" href="../../css/styleBewegung.css">
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h1>Welchen Weg würdest du heute wählen, um dir etwas Gutes zu tun? Die Treppe, um aktiv in den Tag zu starten, oder der Aufzug, um entspannt an dein Ziel zu gelangen?</h1>
+
+    <form action="#" method="post">
+      <div class="image-options">
+        <label class="option">
+          <input type="radio" name="choice" value="stairs">
+          <img src="../../images/treppe2.jpg" alt="Treppe" class="option-image">
+          <span>Treppe</span>
+        </label>
+        <label class="option">
+          <input type="radio" name="choice" value="elevator">
+          <img src="../../images/aufzug2.jpg" alt="Aufzug" class="option-image">
+          <span>Aufzug</span>
+        </label>
+      </div>
+      <button type="submit" class="button" id="continue-button">Weiter &rarr;</button>
+    </form>
+  </div>
+</div>
+
+<!-- Popup Dialog -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2 class="popup-question">
+      Möchten Sie regelmäßig eine Erinnerung erhalten, um sich mit etwas Bewegung, wie zum Beispiel einem Spaziergang, etwas Gutes zu tun?
+    </h2>
+    <div class="popup-options">
+      <label><input type="radio" name="reminder" value="yes"> Ja, bitte erinnern Sie mich regelmäßig!</label>
+      <label><input type="radio" name="reminder" value="no"> Nein, danke.</label>
+    </div>
+    <button id="save-button" class="popup-button">Speichern</button>
+  </div>
+</div>
+
+<script src="../../js/script.js"></script>
+
+</body>
+</html>
+
